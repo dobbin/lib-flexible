@@ -1,12 +1,12 @@
 ;(function(win, lib) {
-    var doc = win.document;
-    var docEl = doc.documentElement;
-    var metaEl = doc.querySelector('meta[name="viewport"]');
-    var flexibleEl = doc.querySelector('meta[name="flexible"]');
-    var dpr = 0;
-    var scale = 0;
-    var tid;
-    var flexible = lib.flexible || (lib.flexible = {});
+    var doc = win.document,
+        docEl = doc.documentElement,
+        metaEl = doc.querySelector('meta[name="viewport"]'),
+        flexibleEl = doc.querySelector('meta[name="flexible"]'),
+        dpr = 0,
+        scale = 0,
+        tid,
+        flexible = lib.flexible || (lib.flexible = {});
     
     if (metaEl) {
         console.warn('将根据已有的meta标签来设置缩放比例');
